@@ -98,7 +98,7 @@ function createMainWindow() {
             frame: false
         })
         arg.val = arg.val || ''
-        const promptHtml = '<label for="val">' + arg.title + '</label>\
+        const promptHtml = '<meta charset="utf-8"> <label for="val">' + arg.title + '</label>\
     <input id="val" value="' + arg.val + '" autofocus />\
     <button onclick="require(\'electron\').ipcRenderer.send(\'prompt-response\', document.getElementById(\'val\').value);window.close()">Ok</button>\
     <button onclick="window.close()">Cancel</button>\
